@@ -1,28 +1,28 @@
 # 🚗 Oficina — Sistema de Gerenciamento de Oficina Mecânica
 
-O **Oficina** é um sistema web desenvolvido para facilitar o **gerenciamento completo de uma oficina mecânica**, permitindo o **cadastro e controle de clientes, fornecedores, peças, serviços e ordens de serviço (OS)** de forma prática e organizada.
+O **Oficina** é um sistema web desenvolvido em **Django** para gerenciar o dia a dia de uma **oficina mecânica**, oferecendo controle sobre **clientes, fornecedores, peças, serviços e ordens de serviço (OS)** de maneira prática e organizada.
 
 ---
 
 ## 🧩 Funcionalidades Principais
 
 - 👨‍🔧 **Cadastro de Clientes**  
-  Armazena informações dos clientes, como nome, telefone, endereço e veículos associados.
+  Gerencia informações de clientes, incluindo veículos e histórico de serviços.
 
 - 🧾 **Cadastro de Fornecedores**  
-  Gerencia os dados dos fornecedores de peças e materiais.
+  Armazena dados de fornecedores de peças e materiais.
 
-- ⚙️ **Cadastro de Peças e Serviços**  
-  Controle de estoque, preços e descrição dos produtos e serviços oferecidos.
+- ⚙️ **Gestão de Peças e Serviços**  
+  Controle de estoque, preços e descrição de serviços.
 
-- 🧰 **Gestão de Ordens de Serviço (OS)**  
-  Criação, acompanhamento e encerramento de OS, com vínculo ao cliente, veículo e serviços executados.
+- 🧰 **Ordens de Serviço (OS)**  
+  Criação, edição e finalização de ordens de serviço vinculadas a clientes e veículos.
 
 - 💰 **Controle Financeiro Simplificado**  
-  Visualização de receitas e despesas, com relatório básico.
+  Exibe receitas e despesas de forma resumida.
 
-- 🔒 **Autenticação de Usuários**  
-  Login seguro para acesso ao sistema (ex: administrador e funcionários).
+- 🔐 **Sistema de Login e Permissões**  
+  Controle de acesso por usuários (administradores e funcionários).
 
 ---
 
@@ -30,13 +30,14 @@ O **Oficina** é um sistema web desenvolvido para facilitar o **gerenciamento co
 
 | Camada | Tecnologias |
 |--------|--------------|
+| **Backend** | Python 3 + Django 5 |
 | **Frontend** | HTML5, CSS3, JavaScript |
-| **Backend (futuro)** | Node.js ou Python (Flask/Django) |
-| **Banco de Dados (futuro)** | MySQL / PostgreSQL |
-| **Hospedagem** | Google Cloud / Render / Vercel |
+| **Banco de Dados** | SQLite (desenvolvimento) / PostgreSQL (produção) |
+| **Autenticação** | Sistema nativo do Django (`django.contrib.auth`) |
+| **Hospedagem (futuro)** | Render / Railway / Vercel / Google Cloud |
 | **Controle de Versão** | Git e GitHub |
 
 ---
 
-## 💻 Estrutura de Pastas
+## 📁 Estrutura de Diretórios (padrão Django)
 
