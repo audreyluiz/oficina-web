@@ -1,0 +1,18 @@
+# Banco de dados SQLite
+*.sqlite3
+db.sqlite3
+
+# Arquivos de migração (opcional manter, mas normalmente deixamos)
+# */migrations/__pycache__/
+
+# Cache do Python
+__pycache__/
+*.pyc
+
+# Configurações locais
+.env
+*.log
+
+# Configuração do PyCharm
+.idea/
+.vscode/
