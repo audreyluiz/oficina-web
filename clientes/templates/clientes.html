@@ -1,0 +1,35 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+<h1 class="teste">Clientes</h1>
+
+<table>
+    <thead>
+    <tr>
+    <th>Cod.</th>
+    <th>Nome</th>
+    <th>CPF</th>
+    </tr>
+    </thead>
+<tbody>
+{% for cliente in clientes %}
+<tr>
+    <td>{{cliente.codigo}}</td>
+    <td>{{cliente.nome}}</td>
+    <td>{{cliente.cpf}}</td>
+
+</tr>
+
+
+{%endfor%}
+    </tbody>
+    </table>
+</body>
+</html>
